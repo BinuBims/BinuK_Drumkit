@@ -140,7 +140,7 @@ function hiHat(){
     }, 300);
 }
 
-function show(){
+function hide(){
     document.querySelector(".a").style.display = "none";
     document.querySelector(".s").style.display = "none";
     document.querySelector(".d").style.display = "none";
@@ -151,7 +151,7 @@ function show(){
     document.querySelector(".k").style.display = "none";   
 }
 
-function hide(){
+function show(){
     document.querySelector(".a").style.display = "revert";
     document.querySelector(".s").style.display = "revert";
     document.querySelector(".d").style.display = "revert";

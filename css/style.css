@@ -34,10 +34,11 @@ section{
 
 
 .drumContainer {
+  border: 2px solid rgb(251, 94, 16);
   position: relative;
   width: 80%;
-  /* max-width: 100%; Adjust for your image size */
   margin: 0 auto; /* Centering */
+  padding: 1%;
 }
 
 #drumKit {

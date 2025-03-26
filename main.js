@@ -11,6 +11,39 @@ document.querySelector(".left").addEventListener("click", leftDisk);
 document.querySelector(".right").addEventListener("click", rightDisk);
 document.querySelector(".hihat").addEventListener("click", hiHat);
 
+document.body.addEventListener("keydown", (e) =>{
+
+    switch(e.key){
+        case "a":
+            hiHat();
+            break;
+        case "s":
+            snareDrum();
+            break;
+        case "d":
+            leftDisk();
+            break;
+        case "f":
+            bass();
+            break;
+        case "g":
+            lowTom();
+            break;
+        case "h":
+            highTom();
+            break;
+        case "j":
+            rightDisk();
+            break;
+        case "k":
+            floorTom();
+            break;
+            
+
+    }
+}
+)
+
 
 const paddle = document.querySelector(".paddle");
 const button = document.querySelector(".button");

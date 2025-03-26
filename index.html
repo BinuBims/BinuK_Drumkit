@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section  class="twoButton">
+        <button class="showShortcuts">Show shortcuts</button>
+        <button class="hideShortcuts">Hide shortcuts</button>
+    </section>
+    <section class="drumContainer">
+        <img id="drumKit" src="images/drum-kit.png" alt="drum-kit" usemap="#drumMap"/>
+        <img class="overlay button" src="images/button.png" alt="button">
+        <img class="overlay paddle" src="images/paddle.png" alt="paddle">
+        <img class="overlay hihat" src="images/hihat.png" alt="hihat">
+        <img class="overlay left" src="images/left.png" alt="left">
+        <img class="overlay right" src="images/right.png" alt="right">
+        <img class="overlay stick1" src="images/stick.png" alt="stick">
+        <img class="overlay stick2" src="images/stick.png" alt="stick">
+        <span class="overlay a">A</span>
+        <span class="overlay s">S</span>
+        <span class="overlay d">D</span>
+        <span class="overlay f">F</span>
+        <span class="overlay g">G</span>
+        <span class="overlay h">H</span>
+        <span class="overlay j">J</span>
+        <span class="overlay k">K</span>
+    </section>
+    <map name="drumMap">
+        <!-- <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"> -->
+        <area id="bass" shape="circle" coords="608,521,172" alt="bass-drum">
+        <area id="floorTom" shape="rect" coords="847,291,1086,602" alt="floor-tom">
+        <area id="highTom" shape="rect" coords="637,154,818,317" alt="high-tom">
+        <area id="lowTom" shape="rect" coords="434,169,576,313" alt="low-tom">
+        <area id="snareDrum" shape="circle" coords="289,341,105" alt="snare-drum">
+        <area id="hiHat" shape="poly" coords="0,184,42,173,93,172,126,170,167,165,214,165,245,172,256,175,249,181,231,191,199,191,179,195,128,196,104,199,63,199,33,194,20,192" alt="hi-hat">
+    </map>
+    <script src="main.js"></script>
+    <script src="imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+    
+</body>
+</html>

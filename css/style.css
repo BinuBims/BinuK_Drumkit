@@ -1,0 +1,298 @@
+html {
+  font-size: 62.5%;
+  /* background: url("./images/background.jpg") bottom center;
+  background-size: cover; */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.twoButton{
+  display:flex;
+  justify-content: center;
+  flex: 1;
+}
+
+button{
+  margin:2% 2%;
+  padding:1%;
+}
+
+section{
+  display:flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+.drumContainer {
+  position: relative;
+  width: 80%;
+  /* max-width: 100%; Adjust for your image size */
+  margin: 0 auto; /* Centering */
+}
+
+#drumKit {
+  width: 80%;
+  height: auto;
+  display: block; /* Removes extra space */
+}
+
+.overlay {
+  position: absolute;
+  width: 100px; /* Adjust the size of the overlays */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.paddleHover{
+  transform: rotateX(-0.15turn);
+}
+
+
+.paddle {
+  top: 72%; /* Adjust vertical position */
+  left: 45.2%;
+  width: 4% /* Adjust horizontal position */
+}
+
+.button{
+  top: 60%; /* Adjust vertical position */
+  left: 46.3%;
+  width: 3%;
+  z-index: 1;
+}
+
+.buttonHover{
+  transform: scale(.85);
+}
+
+.right{
+  top: 11%;
+  left:68%;
+  width:15%;
+
+}
+
+.rightHover{
+  transform: rotateX(70deg)
+}
+
+.left{
+  top: 7%;
+  left: 26%;
+  width: 12%;
+}
+
+.leftHover{
+  transform: rotateX(40deg) rotateY(5deg);
+
+}
+
+.hihat{
+  top:11%;
+  left: 10.3%;
+  width: 16%;
+}
+
+.hihatHover{
+  transform: rotateX(50deg);
+}
+
+.stick1{
+  transform: rotate(-20deg);
+  top: 12%;
+  left: 55%;
+  width: .5%;
+}
+
+.stick2{
+  transform: rotate(18deg);
+  top: 12.5%;
+  left: 40%;
+  width: .5%;
+}
+
+.stick1Right{
+  transition: 0.4s ease;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 12%;
+  left: 70%;
+}
+
+.stick1FloorTom{
+  transition: 0.4s ease;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 32%;
+  left: 65%;
+}
+
+.stick1HighTom{
+  transition: 0.2s ease;
+  transform: rotateX(60deg);
+  position: absolute;
+  top: 12%;
+  left: 54%;
+}
+
+.stick2Snare{
+  transition: 0.2s ease;
+  transform: rotate(-60deg);
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+
+.stick2LowTom{
+  transition: 0.2s ease;
+  transform: rotateX(60deg);
+  position: absolute;
+  top: 13.5%;
+  left: 40%;
+}
+
+.stick2Left{
+  transition: 0.6s ease;
+  transform: rotate(-40deg);
+  position: absolute;
+  top: 9%;
+  left: 35%;
+}
+
+.stick2HiHat{
+  transition: 0.3s ease;
+  transform: rotate(-60deg);
+  position: absolute;
+  top: 13.5%;
+  left: 23%;
+}
+
+.a{
+  position: absolute;
+  top: 14%;
+  left: 17.5%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.a{
+  position: absolute;
+  top: 18%;
+  left: 16%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.s{
+  position: absolute;
+  top: 33%;
+  left: 27%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.d{
+  position: absolute;
+  top: 10%;
+  left: 30.5%;
+  font-weight: bold;
+  font-size:1.4rem;
+}
+
+.f{
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.g{
+  position: absolute;
+  top: 26%;
+  left: 40%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.h{
+  position: absolute;
+  top: 26%;
+  left: 54%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.j{
+  position: absolute;
+  top: 14%;
+  left: 74.5%;
+  font-weight: bold;
+  font-size: 1.4rem;
+
+}
+
+.k{
+  position: absolute;
+  top: 36%;
+  left: 68.5%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+/* img:first-child{
+  margin-left: 50%;
+  width: 100%;
+  height: auto;
+  border: 2px solid orange;
+} */
+
+/* .keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+} */

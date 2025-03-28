@@ -1,10 +1,10 @@
-# soundBytes DrumKit
+# DrumKit
 
 This Project is a modification from [WesBos Javascript 30](https://courses.wesbos.com/account/signin)
 
-## Objective
+## Demo
 
-By End of this project, you should understand:
+https://github.com/user-attachments/assets/fb7e247e-f853-4f10-a3c3-92fec955e3d7
 
 # Objectives
 
@@ -28,13 +28,10 @@ By End of this project, you should understand:
 - Understand how CSS transitions can be triggered using JavaScript.
 - Explore the interaction between JavaScript and CSS to create smooth animations.
 
-## Expected Outcome
+## Push Work
 
-A musical instrument that can be played using the computer’s keyboard. As a note is selected the user should see a visible indication that the key and note was played
+- Since I wanted a sound to play when a user clicks on a part of the image according to the instrument, my first idea was to screenshot each instrument separately and assemble them together. However, this approach turned out to be too complex, so I explored using an image map to create an interactive image. I used [Free Online Image Map Generator](https://www.image-map.net/).
 
-## Instructions
+- I then encountered another problem: since the map was created using pixels, it was not responsive at all. To address this, I used a CSS script from [GitHub](https://github.com/davidjbradshaw/image-map-resizer) to make it responsive, ensuring the image map adapts correctly across all devices.
 
-1. Create an account for WesBro course. (It’s free !)
-2. Download the started code for the drum kit here
-3. Rewatch the drum kit video at your own pace and complete `index-START.html`
-4. Create a new instrument using the mp3 files found in the sound directory from, have fun, mix different sound or create a traditional sounding instrument
+- I used percentages for everything, including the main drumkit image and each clickable object, to make sure they stayed properly aligned as the image scaled up or down. Additionally, I found that using `rem` units for font sizes worked better, helping to maintain responsiveness as the drumkit resized.

@@ -2,7 +2,7 @@
 
 This Project is a modification from [WesBos Javascript 30](https://courses.wesbos.com/account/signin)
 
-## Demo
+## Demo/ Live site: https://bk-drum-kit.netlify.app/
 
 https://github.com/user-attachments/assets/fb7e247e-f853-4f10-a3c3-92fec955e3d7
 
